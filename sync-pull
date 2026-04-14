@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "$ROOT"
+
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo "sync-pull: $ROOT is not a git repo. Run ./sync-init first." >&2
+  exit 1
+fi
+
+mkdir -p analytics sessions sidebar-sessions slug-cache worktrees projects
+chmod 700 "$ROOT" analytics sessions sidebar-sessions slug-cache worktrees projects 2>/dev/null || true
+[ -f config.yaml ] && chmod 600 config.yaml 2>/dev/null || true
+
+if ! git remote get-url origin >/dev/null 2>&1; then
+  echo "sync-pull: origin is not set. Run ./sync-init <remote-url> first." >&2
+  exit 1
+fi
+
+BRANCH="$(git branch --show-current 2>/dev/null || echo main)"
+if ! git rev-parse --verify "refs/remotes/origin/$BRANCH" >/dev/null 2>&1; then
+  git fetch origin "$BRANCH" >/dev/null 2>&1 || true
+fi
+
+if ! git rev-parse --verify "@{upstream}" >/dev/null 2>&1; then
+  if git rev-parse --verify "refs/remotes/origin/$BRANCH" >/dev/null 2>&1; then
+    git branch --set-upstream-to="origin/$BRANCH" "$BRANCH" >/dev/null
+  fi
+fi
+
+git pull --rebase --autostash

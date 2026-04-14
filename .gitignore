@@ -1,0 +1,24 @@
+# Default-deny: only track the durable parts of gstack state.
+*
+
+# Repo metadata and helper scripts
+!.gitignore
+!.gitattributes
+!README.sync.md
+!sync-init
+!sync-pull
+!sync-push
+!sync-status
+
+# Portable user settings / profile context
+!config.yaml
+!builder-profile.jsonl
+
+# Durable per-project gstack memory
+!projects/
+!projects/**
+
+# Recomputable cache inside project memory
+projects/*/repo-mode.json
+projects/**/.gstack/
+projects/**/.gstack/**

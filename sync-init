@@ -1,0 +1,90 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REMOTE_URL=""
+PUSH=0
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./sync-init [remote-url] [--push]
+
+Examples:
+  ./sync-init git@github.com:YOU/gstack-state.git
+  ./sync-init git@github.com:YOU/gstack-state.git --push
+EOF
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --push)
+      PUSH=1
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      if [ -n "$REMOTE_URL" ]; then
+        echo "sync-init: unexpected extra argument: $1" >&2
+        usage >&2
+        exit 1
+      fi
+      REMOTE_URL="$1"
+      shift
+      ;;
+  esac
+done
+
+cd "$ROOT"
+
+mkdir -p analytics sessions sidebar-sessions slug-cache worktrees projects
+chmod 700 "$ROOT" analytics sessions sidebar-sessions slug-cache worktrees projects 2>/dev/null || true
+[ -f config.yaml ] && chmod 600 config.yaml 2>/dev/null || true
+
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  git init >/dev/null
+  git branch -M main >/dev/null 2>&1 || true
+fi
+
+git config pull.rebase true
+git config rebase.autoStash true
+
+if [ -n "$REMOTE_URL" ]; then
+  if git remote get-url origin >/dev/null 2>&1; then
+    git remote set-url origin "$REMOTE_URL"
+  else
+    git remote add origin "$REMOTE_URL"
+  fi
+fi
+
+git add .gitignore .gitattributes README.sync.md sync-init sync-pull sync-push sync-status
+[ -f config.yaml ] && git add config.yaml
+[ -f builder-profile.jsonl ] && git add builder-profile.jsonl
+[ -d projects ] && git add projects
+
+if ! git diff --cached --quiet; then
+  git commit -m "chore: initialize gstack state sync"
+fi
+
+BRANCH="$(git branch --show-current 2>/dev/null || echo main)"
+
+echo "ROOT: $ROOT"
+git remote get-url origin 2>/dev/null | sed 's/^/ORIGIN: /' || echo "ORIGIN: unset"
+echo "BRANCH: $BRANCH"
+
+if [ "$PUSH" -eq 1 ]; then
+  if ! git remote get-url origin >/dev/null 2>&1; then
+    echo "sync-init: origin is not set; cannot push" >&2
+    exit 1
+  fi
+  git push -u origin "$BRANCH"
+else
+  if git remote get-url origin >/dev/null 2>&1; then
+    echo "Next: git -C \"$ROOT\" push -u origin $BRANCH"
+  else
+    echo "Next: ./sync-init <private-github-repo-url> --push"
+  fi
+fi
