@@ -1,0 +1,2 @@
+{"skill":"ship","timestamp":"2026-04-15T10:33:45Z","coverage_pct":100,"plan_items_total":0,"plan_items_done":0,"verification_result":"skipped","version":"0.2.2","branch":"codexdesign-review-mujoco-20260415-docs"}
+{"skill":"devex-review","timestamp":"2026-04-15T14:52:00Z","status":"issues_open","overall_score":6,"product_type":"cli-example+static-report","tthw_measured":"<1min deps-preinstalled; docs-path osmesa failed, egl succeeded","dimensions_tested":5,"dimensions_inferred":3,"boomerang":"NO","commit":"165a11e"}

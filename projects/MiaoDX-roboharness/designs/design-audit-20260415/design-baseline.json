@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-15",
+  "url": "http://127.0.0.1:8766/report.html",
+  "designScore": "B",
+  "aiSlopScore": "A",
+  "categoryGrades": {
+    "hierarchy": "B",
+    "typography": "B",
+    "spacing": "B",
+    "color": "A",
+    "interaction": "B",
+    "responsive": "B",
+    "content": "B",
+    "aiSlop": "A",
+    "motion": "C",
+    "performance": "A"
+  },
+  "findings": [
+    {"id": "FINDING-001", "title": "Embedded 3D scenes were broken in the shipped report", "impact": "high", "category": "interaction"},
+    {"id": "FINDING-002", "title": "Report forced horizontal scrolling on mobile and tablet", "impact": "high", "category": "responsive"},
+    {"id": "FINDING-003", "title": "Pass-state metadata contradicted the main action copy", "impact": "medium", "category": "content"}
+  ]
+}
