@@ -1,0 +1,14 @@
+{"skill":"review","timestamp":"2026-04-16T14:28:30Z","status":"clean","issues_found":0,"critical":0,"informational":0,"quality_score":10.0,"specialists":{"testing":{"dispatched":true,"findings":1,"critical":1,"informational":0},"maintainability":{"dispatched":true,"findings":3,"critical":0,"informational":3}},"findings":[],"commit":"ca3c772"}
+{"skill":"adversarial-review","timestamp":"2026-04-16T14:28:34Z","status":"clean","source":"claude","tier":"always","gate":"skipped","commit":"ca3c772"}
+{"skill":"plan-ceo-review","timestamp":"2026-04-17T09:33:39Z","status":"clean","unresolved":0,"critical_gaps":3,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"d1de33d"}
+{"skill":"plan-eng-review","timestamp":"2026-04-17T09:33:39Z","status":"clean","unresolved":0,"critical_gaps":4,"issues_found":22,"mode":"FULL_REVIEW","via":"autoplan","commit":"d1de33d"}
+{"skill":"plan-devex-review","timestamp":"2026-04-17T09:33:39Z","status":"clean","initial_score":5,"overall_score":8,"product_type":"cli-python-sdk","tthw_current":"4-6m smoke / 10-15m live","tthw_target":"<5m smoke","unresolved":0,"via":"autoplan","commit":"d1de33d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-17T09:33:39Z","status":"clean","source":"codex","phase":"ceo","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"d1de33d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-17T09:33:39Z","status":"clean","source":"codex","phase":"eng","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"d1de33d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-17T09:33:39Z","status":"clean","source":"codex","phase":"dx","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"d1de33d"}
+{"skill":"plan-ceo-review","timestamp":"2026-04-20T02:57:44Z","status":"clean","unresolved":0,"critical_gaps":4,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"0a8fd26"}
+{"skill":"plan-eng-review","timestamp":"2026-04-20T02:57:44Z","status":"clean","unresolved":0,"critical_gaps":4,"issues_found":23,"mode":"FULL_REVIEW","via":"autoplan","commit":"0a8fd26"}
+{"skill":"plan-devex-review","timestamp":"2026-04-20T02:57:44Z","status":"clean","initial_score":4,"overall_score":7.4,"product_type":"benchmark-harness-docs-workflow","tthw_current":"45+ min / blocked","tthw_target":"10 min / 5 steps","unresolved":0,"via":"autoplan","commit":"0a8fd26"}
+{"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"codex-only","phase":"ceo","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}
+{"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"codex-only","phase":"eng","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}
+{"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"unavailable","phase":"dx","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}

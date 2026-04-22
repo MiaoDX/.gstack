@@ -1,0 +1,13 @@
+{"skill":"ship","event":"started","branch":"feat/ort-showcase-improvements","session":"207581-1776317086","ts":"2026-04-16T05:24:46.959Z"}
+{"skill":"review","event":"started","branch":"main","session":"862549-1776349121","ts":"2026-04-16T14:18:41.429Z"}
+{"skill":"review","event":"completed","branch":"main","outcome":"success","duration_s":"1776349724","session":"","ts":"2026-04-16T14:28:44.160Z"}
+{"skill":"ship","event":"completed","branch":"fix/gear-sonic-tracking-contract","outcome":"success","duration_s":"0","session":"","ts":"2026-04-16T14:43:14.500Z"}
+{"skill":"checkpoint","event":"completed","branch":"main","outcome":"success","duration_s":"4951","session":"checkpoint-1776419008","ts":"2026-04-17T09:43:28.124Z"}
+{"skill":"checkpoint","event":"started","branch":"main","session":"1933633-1776419156","ts":"2026-04-17T09:45:57.025Z"}
+{"skill":"checkpoint","event":"completed","branch":"main","outcome":"success","duration_s":"0","session":"checkpoint-1776419217","ts":"2026-04-17T09:46:57.285Z"}
+{"skill":"review","event":"started","branch":"main","session":"1107164-1776438434","ts":"2026-04-17T15:07:14.963Z"}
+{"skill":"review","event":"completed","branch":"main","outcome":"success","duration_s":"0","session":"review-1776438463","ts":"2026-04-17T15:07:43.893Z"}
+{"skill":"autoplan","event":"started","branch":"main","session":"2717623-1776650697","ts":"2026-04-20T02:04:57.916Z"}
+{"skill":"ship","event":"started","branch":"main","session":"643888-1776682468","ts":"2026-04-20T10:54:28.971Z"}
+{"skill":"ship","event":"completed","branch":"main","outcome":"abort","duration_s":"0","session":"643888-1776682468","ts":"2026-04-20T10:56:01.294Z"}
+{"skill":"autoplan","event":"started","branch":"main","session":"2465645-1776824199","ts":"2026-04-22T02:16:39.401Z"}
