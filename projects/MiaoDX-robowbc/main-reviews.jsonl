@@ -12,3 +12,11 @@
 {"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"codex-only","phase":"ceo","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}
 {"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"codex-only","phase":"eng","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}
 {"skill":"autoplan-voices","timestamp":"2026-04-20T02:57:44Z","status":"clean","source":"unavailable","phase":"dx","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0a8fd26"}
+{"skill":"plan-ceo-review","timestamp":"2026-04-24T08:55:12Z","status":"clean","unresolved":0,"critical_gaps":0,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"0ec155d"}
+{"skill":"plan-design-review","timestamp":"2026-04-24T08:55:12Z","status":"clean","unresolved":0,"via":"autoplan","commit":"0ec155d"}
+{"skill":"plan-eng-review","timestamp":"2026-04-24T08:55:12Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":7,"mode":"FULL_REVIEW","via":"autoplan","commit":"0ec155d"}
+{"skill":"plan-devex-review","timestamp":"2026-04-24T08:55:12Z","status":"clean","initial_score":4.8,"overall_score":7.9,"product_type":"cli-proof-pack-contract-workflow","tthw_current":"25-35 min / 6-8 steps","tthw_target":"10 min / 4 steps","unresolved":0,"via":"autoplan","commit":"0ec155d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-24T08:55:12Z","status":"clean","source":"subagent-only","phase":"ceo","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0ec155d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-24T08:55:12Z","status":"clean","source":"subagent-only","phase":"design","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0ec155d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-24T08:55:12Z","status":"clean","source":"subagent-only","phase":"eng","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0ec155d"}
+{"skill":"autoplan-voices","timestamp":"2026-04-24T08:55:12Z","status":"clean","source":"unavailable","phase":"dx","via":"autoplan","consensus_confirmed":0,"consensus_disagree":0,"commit":"0ec155d"}
