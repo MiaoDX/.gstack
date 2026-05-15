@@ -34,3 +34,8 @@
 {"skill":"investigate","event":"completed","branch":"dongxu/dev-0514","outcome":"success","duration_s":"0","session":"codex-1778729157","ts":"2026-05-14T03:25:57.637Z"}
 {"skill":"ship","event":"started","branch":"dongxu/dev-0514","session":"2323213-1778729982","ts":"2026-05-14T03:39:42.135Z"}
 {"skill":"ship","event":"started","branch":"dongxu/dev-0514","session":"2498274-1778733694","ts":"2026-05-14T04:41:35.031Z"}
+{"skill":"ship","event":"started","branch":"dongxu/dev-0514-molmo-parallel","session":"3964533-1778753229","ts":"2026-05-14T10:07:09.213Z"}
+{"skill":"autoplan","event":"started","branch":"dongxu/dev-0514","session":"613227-1778762354","ts":"2026-05-14T12:39:14.380Z"}
+{"skill":"autoplan","event":"completed","branch":"dongxu/dev-0514","outcome":"abort","duration_s":"0","session":"autoplan-blocked-1778762578","ts":"2026-05-14T12:42:58.574Z"}
+{"skill":"autoplan","event":"started","branch":"dongxu/dev-0514","session":"811108-1778763812","ts":"2026-05-14T13:03:32.151Z"}
+{"skill":"autoplan","event":"completed","branch":"dongxu/dev-0514","ts":"2026-05-14T13:13:03.012Z"}
