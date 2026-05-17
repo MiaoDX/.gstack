@@ -1,0 +1,3 @@
+{"skill":"plan-eng-review","timestamp":"2026-05-16T12:50:28Z","status":"issues_open","unresolved":4,"critical_gaps":2,"issues_found":5,"mode":"FULL_REVIEW","via":"autoplan","commit":"a7e5b41"}
+{"skill":"plan-devex-review","timestamp":"2026-05-16T12:50:28Z","status":"issues_open","initial_score":6,"overall_score":8,"product_type":"CLI/API document conversion tool","tthw_current":"clear for existing devs","tthw_target":"quality status visible in one command/API call","unresolved":2,"via":"autoplan","commit":"a7e5b41"}
+{"skill":"plan-ceo-review","timestamp":"2026-05-16T12:50:28Z","status":"accepted_with_clarifications","unresolved":0,"critical_gaps":0,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"a7e5b41"}
