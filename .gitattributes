@@ -1,3 +1,4 @@
 *.jsonl merge=union
 projects/*/*-design-*.md merge=union
 projects/*/*-test-plan-*.md merge=union
+projects/*/*-eng-review-test-plan-*.md merge=union
