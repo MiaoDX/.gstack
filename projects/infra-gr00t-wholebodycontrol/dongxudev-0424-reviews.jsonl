@@ -9,3 +9,4 @@
 {"skill":"plan-ceo-review","timestamp":"2026-04-27T10:45:59Z","status":"clean","unresolved":0,"critical_gaps":0,"mode":"SELECTIVE_EXPANSION","scope_proposed":0,"scope_accepted":0,"scope_deferred":0,"via":"autoplan","commit":"1e120d39"}
 {"skill":"plan-eng-review","timestamp":"2026-04-27T10:45:59Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":4,"mode":"FULL_REVIEW","via":"autoplan","commit":"1e120d39"}
 {"skill":"plan-devex-review","timestamp":"2026-04-27T10:45:59Z","status":"clean","initial_score":6,"overall_score":8,"product_type":"CLI Tool + Documentation","tthw_current":"25 min","tthw_target":"10 min","mode":"POLISH","persona":"internal-robotics-runtime-eng","competitive_tier":"RedFlag","unresolved":0,"via":"autoplan","commit":"1e120d39"}
+{"skill":"plan-eng-review","timestamp":"2026-05-08T04:05:13Z","status":"issues_open","unresolved":1,"critical_gaps":0,"issues_found":1,"mode":"FULL_REVIEW","commit":"3231fcff"}
