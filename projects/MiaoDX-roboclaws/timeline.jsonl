@@ -40,3 +40,12 @@
 {"skill":"autoplan","event":"started","branch":"dongxu/dev-0514","session":"811108-1778763812","ts":"2026-05-14T13:03:32.151Z"}
 {"skill":"autoplan","event":"completed","branch":"dongxu/dev-0514","ts":"2026-05-14T13:13:03.012Z"}
 {"skill":"scrape","event":"started","branch":"dongxu/dev-0515","session":"1454355-1779181333","ts":"2026-05-19T09:02:13.859Z"}
+{"skill":"browse","event":"completed","branch":"dongxu/dev-0520","outcome":"success","duration_s":"0","session":"codex-1779333782","ts":"2026-05-21T03:23:02.164Z"}
+{"skill":"design-review","event":"completed","branch":"dongxu/dev-0520","outcome":"success","duration_s":"0","session":"codex-1779333782","ts":"2026-05-21T03:23:02.201Z"}
+{"skill":"devex-review","event":"completed","branch":"dongxu/dev-0520","outcome":"success","duration_s":"0","session":"codex-1779333782","ts":"2026-05-21T03:23:02.238Z"}
+{"skill":"design-html","event":"completed","branch":"dongxu/dev-0520","outcome":"success","duration_s":"0","session":"codex-1779333782","ts":"2026-05-21T03:23:02.277Z"}
+{"skill":"investigate","event":"started","branch":"dongxu/dev-0525","session":"895725-1779886792","ts":"2026-05-27T12:59:52.226Z"}
+{"skill":"investigate","event":"started","branch":"dongxu/dev-0525","session":"998832-1779938762","ts":"2026-05-28T03:26:02.386Z"}
+{"skill":"investigate","event":"completed","branch":"dongxu/dev-0525","outcome":"success","duration_s":"0","session":"codex-1779939305","ts":"2026-05-28T03:35:05.442Z"}
+{"skill":"investigate","event":"started","branch":"dongxu/dev-0525","session":"2761799-1780048873","ts":"2026-05-29T10:01:13.376Z"}
+{"skill":"investigate","event":"started","branch":"dongxu/dev-0525","session":"4057142-1780060911","ts":"2026-05-29T13:21:51.862Z"}

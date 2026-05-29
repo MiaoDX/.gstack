@@ -20,3 +20,6 @@
 {"skill":"ship","event":"completed","branch":"main","outcome":"abort","duration_s":"0","session":"230393-1776657641","ts":"2026-04-20T04:00:41.140Z"}
 {"skill":"ship","event":"started","branch":"dongux/dev-0513","session":"2656641-1778656734","ts":"2026-05-13T07:18:54.373Z"}
 {"skill":"ship","event":"completed","branch":"main","outcome":"success","duration_s":"0","session":"ship-1778657238","ts":"2026-05-13T07:27:19.090Z"}
+{"skill":"investigate","event":"started","branch":"main","session":"2372994-1779277184","ts":"2026-05-20T11:39:44.732Z"}
+{"skill":"ship","event":"started","branch":"main","session":"1070413-1779328290","ts":"2026-05-21T01:51:30.718Z"}
+{"skill":"investigate","event":"started","branch":"main","session":"1182149-1779329459","ts":"2026-05-21T02:10:59.573Z"}
